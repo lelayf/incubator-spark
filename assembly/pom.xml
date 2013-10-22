@@ -30,6 +30,13 @@
   <name>Spark Project Assembly</name>
   <url>http://spark.incubator.apache.org/</url>
 
+  <properties>
+    <spark.jar>${project.build.directory}/scala-${scala.version}/${project.artifactId}-${project.version}-hadoop${hadoop.version}.jar</spark.jar>
+    <deb.pkg.name>spark</deb.pkg.name>
+    <deb.install.path>/usr/share/spark</deb.install.path>
+    <deb.user>root</deb.user>
+  </properties>
+
   <repositories>
     <!-- A repository in the local filesystem for the Py4J JAR, which is not in Maven central -->
     <repository>
@@ -79,7 +86,7 @@
         <artifactId>maven-shade-plugin</artifactId>
         <configuration>
           <shadedArtifactAttached>false</shadedArtifactAttached>
-          <outputFile>${project.build.directory}/scala-${scala.version}/${project.artifactId}-${project.version}-hadoop${hadoop.version}.jar</outputFile>
+          <outputFile>${spark.jar}</outputFile>
           <artifactSet>
             <includes>
               <include>*:*</include>
@@ -253,10 +260,6 @@
                     <data>
                       <src>${basedir}/src/deb/RELEASE</src>
                       <type>file</type>
-                      <mapper>
-                        <type>perm</type>
-                        <user>${deb.user}</user>
-                        <group>${deb.user}</group>
                         <prefix>${deb.install.path}</prefix>
                       </mapper>
                     </data>
