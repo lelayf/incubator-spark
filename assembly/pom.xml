@@ -214,7 +214,7 @@
                         <user>${deb.user}</user>
                         <group>${deb.user}</group>
                         <prefix>${deb.install.path}</prefix>
-                        <filemode>744</filemode>
+                        <filemode>755</filemode>
                       </mapper>
                     </data>
                     <data>
@@ -225,7 +225,7 @@
                         <user>${deb.user}</user>
                         <group>${deb.user}</group>
                         <prefix>${deb.install.path}</prefix>
-                        <filemode>744</filemode>
+                        <filemode>755</filemode>
                       </mapper>
                     </data>
                     <data>
@@ -236,7 +236,7 @@
                         <user>${deb.user}</user>
                         <group>${deb.user}</group>
                         <prefix>${deb.install.path}</prefix>
-                        <filemode>744</filemode>
+                        <filemode>755</filemode>
                       </mapper>
                     </data>
                     <data>
@@ -247,7 +247,7 @@
                         <user>${deb.user}</user>
                         <group>${deb.user}</group>
                         <prefix>${deb.install.path}</prefix>
-                        <filemode>744</filemode>
+                        <filemode>755</filemode>
                       </mapper>
                     </data>
                     <data>
@@ -268,7 +268,7 @@
                         <user>${deb.user}</user>
                         <group>${deb.user}</group>
                         <prefix>${deb.install.path}/conf</prefix>
-                        <filemode>744</filemode>
+                        <filemode>755</filemode>
                       </mapper>
                     </data>
                     <data>
@@ -279,7 +279,7 @@
                         <user>${deb.user}</user>
                         <group>${deb.user}</group>
                         <prefix>${deb.install.path}/bin</prefix>
-                        <filemode>744</filemode>
+                        <filemode>755</filemode>
                       </mapper>
                     </data>
                     <data>
@@ -290,7 +290,7 @@
                         <user>${deb.user}</user>
                         <group>${deb.user}</group>
                         <prefix>${deb.install.path}/python</prefix>
-                        <filemode>744</filemode>
+                        <filemode>755</filemode>
                       </mapper>
                     </data>
                   </dataSet>
