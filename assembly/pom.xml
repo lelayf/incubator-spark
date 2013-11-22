@@ -260,7 +260,12 @@
                     <data>
                       <src>${basedir}/src/deb/RELEASE</src>
                       <type>file</type>
+                      <mapper>
+                        <type>perm</type>
+                        <user>${deb.user}</user>
+                        <group>${deb.user}</group>
                         <prefix>${deb.install.path}</prefix>
+                        <filemode>644</filemode>
                       </mapper>
                     </data>
                     <data>
